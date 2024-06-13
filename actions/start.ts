@@ -28,7 +28,7 @@ const messages = [
   "Say — La ilaha illa anta subhanaka inniy kuntu minaz zolimiyn",
 ];
 
-const username = "@zdsazdsa";
+const username = "@remindthem";
 
 // Schedule a cron job to check for new articles
 Deno.cron("send an article", "*/30 * * * *", async () => {
