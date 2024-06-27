@@ -31,7 +31,7 @@ const messages = [
 const username = "@rem1ndthem";
 
 // Schedule a cron job to check for new articles
-Deno.cron("send an article", "* * * * *", async () => {
+Deno.cron("send an article", "0 * * * *", async () => {
   const index = Math.floor(Math.random() * messages.length);
   await bot.api.sendMessage(username, messages[index]);
 });
